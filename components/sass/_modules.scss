@@ -1,0 +1,135 @@
+/* ==========================================================================
+Header Navigation
+========================================================================== */
+nav .nav-wrapper i {
+display: block;
+font-size: 1.2rem;
+}
+nav ul a,
+nav .brand-logo {
+color: $ig-white;
+font-size: 13px;
+}
+.logo-container {
+&.both {
+@include center;
+}
+&.horizontal {
+@include center(true, false);
+}
+&.vertical {
+@include center(false, true);
+}
+}
+.line {
+margin-left: 15px;
+margin-right: 15px;
+img {
+vertical-align: middle;
+}
+}
+.btn {
+text-transform: none;
+}
+.s-selector {
+display: inline-block;
+}
+.button-collapse {
+color: #26a69a;
+}
+/* ==========================================================================
+selection Icons
+========================================================================== */
+.m-icon {
+position: absolute;
+bottom: 15px;
+left: 0;
+color: $purple;
+margin-right: 15px;
+}
+/* ==========================================================================
+Map Icons
+========================================================================== */
+.card-icon {
+font-size: 16px;
+padding: 10px 10px;
+color: #999999;
+text-align: center;
+}
+.card-icon-button {
+font-size: 16px;
+padding: 10px 10px;
+color: #999999;
+text-align: center;
+border-left: 1px solid #cdcece;
+}
+.space{
+width: 60px;
+}
+.card-txt {
+padding-left: 2px;
+font-size: 10px;
+color: #999999;
+}
+.card .card-content {
+padding: 20px 10px;
+}
+.card .card-action {
+margin: 0px;
+padding: 0px;
+}
+/* ==========================================================================
+Parallax - image size 256
+========================================================================== */
+.parallax-container {
+min-height: 256px;
+line-height: 0;
+height: auto;
+}
+.parallax-container .section {
+width: 100%;
+}
+@media only screen and (max-width: 992px) {
+.loggin,
+.sign-up {
+display: none;
+}
+.line {
+display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+.m-icon {
+display: none;
+}
+}
+/* ==========================================================================
+input-field
+========================================================================== */
+/* label color */
+   .input-field label {
+     color: $grey-l;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: $grey-l;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid $grey-l;
+     box-shadow: 0 1px 0 0 $grey-l;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid $grey-l;
+     box-shadow: 0 1px 0 0 $grey-l;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid $grey-l;
+     box-shadow: 0 1px 0 0 $grey-l;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: $grey-l;
+   }
